@@ -119,6 +119,12 @@ public class BurpExtender implements BurpExtension, ProxyRequestHandler {
         titleLabel.setFont(titleLabel.getFont().deriveFont(Font.BOLD, 22f));
         titleLabel.setAlignmentX(Component.LEFT_ALIGNMENT);
         content.add(titleLabel);
+
+        JLabel authorLabel = new JLabel("Author: 1ight");
+        authorLabel.setFont(authorLabel.getFont().deriveFont(13f));
+        authorLabel.setForeground(Color.GRAY);
+        authorLabel.setAlignmentX(Component.LEFT_ALIGNMENT);
+        content.add(authorLabel);
         content.add(Box.createVerticalStrut(12));
 
         // ---- Status ----
